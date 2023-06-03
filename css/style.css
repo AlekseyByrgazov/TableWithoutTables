@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #22222F;
+}
+.content-wrapper {
+    width: 1180px;
+    margin: 0 auto;
+}
+.header {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #D7EA95;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.table {
+    margin-top: 25px;
+    color: white;
+    border-radius: 2px;
+    background-color: #383843;
+    word-wrap: break-word;
+    border:1px solid #EFF1EC80;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.row {
+    display: flex;
+    border-bottom: 1px solid #EFF1EC80;
+}
+.row:nth-child(3) {
+    border-bottom:none;
+}
+.cell {
+    min-width: 236px;
+    min-height: 30px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-right: 1px solid #eff1eca4;
+}
+.cell:nth-child(5n) {
+    border-right: none;
+}
+.cell:hover {
+    background-color: #75777594;
+    transition: 0.3s ease-in-out;
+    color: #b4e603;
+    cursor: pointer;
+}
+.output-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-height: 100px;
+    margin:25px auto;
+}
+.output {
+    width: 300px;
+    min-height: 100px;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    background-color:#383843;
+    border: 1px solid #eff1eca4;
+    font-size: 26px;
+    opacity: 0;
+    animation: one 1.0s forwards;
+}
+@keyframes one {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.output:hover {
+    opacity:0;
+    transition: 0.3s ease-in-out;
+    animation: two 0.3s forwards;
+}
+@keyframes two {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.cleanOutput {
+    margin-top: 10px;
+    height: 35px;
+    width: 33%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #D7EA95;
+}
+.cleanOutput:hover {
+    background-color: #b4e603;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.task2 {
+    margin:50px 0 25px;
+}
+.outputObj {
+    width: 300px;
+    min-height: 100px;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    background-color:#383843;
+    border: 1px solid #eff1eca4;
+}
