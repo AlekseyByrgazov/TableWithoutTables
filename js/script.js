@@ -4,6 +4,7 @@ let cleanOutput = document.querySelector(".cleanOutput");
 
 table.onclick = function (event) {          // делегирование событий, отслеживаем клик и присваиваем значение окну вывода
     let target = event.target.innerHTML;
+    if (event.target.tagName != "SPAN") return;
     output.innerHTML = target;
 }
 
@@ -56,6 +57,7 @@ let obj = {
     }
     }
 
+    
     let maxNum = -Infinity;
     let minNum = Infinity;
     let outputObjMin = document.querySelector(".outputObjMin");
